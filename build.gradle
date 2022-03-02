@@ -9,10 +9,10 @@ repositories {
     vanilla {
         url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/vanilla'
     }
-    duplicate-a {
-        url 'http://snyk.io'
-        url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/duplicate-a
-    }
+//    duplicate-a {
+//        url 'http://snyk.io'
+//        url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/duplicate-a
+//    }
     duplicate-b {
         url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/duplicate-b'
         url 'http://snyk.io'
