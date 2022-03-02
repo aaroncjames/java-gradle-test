@@ -6,12 +6,14 @@ mainClassName = 'hello.HelloWorld'
 
 // tag::repositories[]
 repositories { 
-    mavenCentral() 
-    maven {
-        url "https://repo.spring.io/release"
-    }
-    maven {
-        url "https://repository.jboss.org/maven2"
+    ivy {
+        url 'https://ajax.googleapis.com/ajax/libs'
+        patternLayout {
+            artifact '[organization]/[revision]/[module].[ext]'
+        }
+        metadataSources {
+            artifact()
+        }
     }
 }
 // end::repositories[]
